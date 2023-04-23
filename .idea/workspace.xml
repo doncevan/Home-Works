@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67368285-fa14-43c7-8012-98879bc9803e" name="Changes" comment="Learning to commit through IntelliJ">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class12HW/HWTask01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class12HW/HWTask01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +45,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/magre/eclipse-workspace/Home Works"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/magre/eclipse-workspace/Home Works&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\magre\eclipse-workspace\Home Works\src\class04HW" />
@@ -65,7 +65,7 @@
       <recent name="class08HW" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CityAndTemperature3_26_23">
+  <component name="RunManager" selected="Application.HWTask01">
     <configuration name="CityAndTemperature3_26_23" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="class05HW.CityAndTemperature3_26_23" />
       <module name="Home Works" />
@@ -105,8 +105,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HWTask01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class12HW.HWTask01" />
+      <module name="Home Works" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="class12HW.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HWTask01" />
         <item itemvalue="Application.CityAndTemperature3_26_23" />
         <item itemvalue="Application.D2Array6PrimeOrNotVer4" />
         <item itemvalue="Application.D2Array7FibonacciVer2" />

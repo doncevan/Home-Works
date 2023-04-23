@@ -6,7 +6,9 @@ public class HWTask01 {
          and has 3 or more characters, print the character in the middle of the String. */
         String word = "Renaissance";
         if (!word.isBlank() && word.length() % 2 == 1 && word.length() >= 3) {
-            System.out.println(word.charAt(5));
+            int middleIndex=word.length()/2;
+            char middleChar=word.charAt(middleIndex);
+            System.out.println(middleChar);
         }
     }
 }
