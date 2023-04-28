@@ -2,7 +2,7 @@ package class13HW;
 
 import java.util.Scanner;
 
-public class Task02 {
+public class Task02WithScanner {
     public static void main(String[] args) {
         // How would you check if String is palindrome or not? aba=> true; Abbc => false
         Scanner inp = new Scanner(System.in);

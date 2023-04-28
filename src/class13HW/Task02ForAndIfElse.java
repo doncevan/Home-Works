@@ -1,6 +1,6 @@
 package class13HW;
 
-public class Task02ForMethod {
+public class Task02ForAndIfElse {
     public static void main(String[] args) {
         String str = "Madam";
         String str2 = "";
