@@ -24,7 +24,7 @@ public class Students {
         thirdStudent.ID = "ghi789";
         numberOfStudents++;
 
-        System.out.print("Total number of sudents: " + numberOfStudents);
+        System.out.print("Total number of students: " + numberOfStudents);
     }
 }
 
