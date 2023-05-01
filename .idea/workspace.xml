@@ -74,7 +74,7 @@
       <recent name="class08HW" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HW01DifferentLanguages">
+  <component name="RunManager" selected="Application.Students">
     <configuration name="HW01DifferentLanguages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="class14HW.HW01DifferentLanguages" />
       <module name="Home Works" />
@@ -127,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task01StrBld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class13HW.Task01StrBld" />
+    <configuration name="Students" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class15HW.Students" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class13HW.*" />
+          <option name="PATTERN" value="class15HW.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Students" />
         <item itemvalue="Application.HW01DifferentLanguages" />
         <item itemvalue="Application.HW04Student" />
         <item itemvalue="Application.HW03IsPrime" />
         <item itemvalue="Application.HW02Email" />
-        <item itemvalue="Application.Task01StrBld" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682699092740</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Class15HW">
+      <created>1682907157323</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682907157323</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,17 +218,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Learning to commit through IntelliJ" />
     <MESSAGE value="Class13HW" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class13HW" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/class14HW/HW03IsPrime.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Class15HW" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class15HW" />
   </component>
 </project>

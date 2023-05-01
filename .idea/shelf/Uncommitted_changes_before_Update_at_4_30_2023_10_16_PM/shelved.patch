@@ -1,0 +1,52 @@
+Index: src/class15HW/Students.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package class15HW;\r\n\r\npublic class Student {\r\n    /* Create a Class called Students. Create three  variables: Name , ID  and  numberOfStudents\r\n    Create three objects of the Students Class. Set the value for  studentName , studentID and increment\r\n     the numberOfStudents for each object. Print out  total number of students.  */\r\n    String Name;\r\n    String ID;\r\n    static int numberOfStudents;\r\n\r\n    public static void main(String[] args) {\r\n        Student one=new Student();\r\n        one.name=\"Lesia\";\r\n        one.ID=\"123-64L\";\r\n        numberOfStudents++;\r\n\r\n        Students two=new Students();\r\n        two.name=\"Nadiia\";\r\n        two.ID=\"56773-64-N\";\r\n        numberOfStudents++;\r\n\r\n        Students three=new Students();\r\n        three.name=\"Lesia\";\r\n        three.ID=\"123-64L\";\r\n        numberOfStudents++;\r\n\r\n        System.out.println(numberOfStudents);\r\n\r\n\r\n    }\r\n\r\n}\r\n\r\n
+===================================================================
+diff --git a/src/class15HW/Students.java b/src/class15HW/Students.java
+--- a/src/class15HW/Students.java	
++++ b/src/class15HW/Students.java	
+@@ -1,6 +1,6 @@
+ package class15HW;
+ 
+-public class Student {
++public class Students {
+     /* Create a Class called Students. Create three  variables: Name , ID  and  numberOfStudents
+     Create three objects of the Students Class. Set the value for  studentName , studentID and increment
+      the numberOfStudents for each object. Print out  total number of students.  */
+@@ -9,25 +9,22 @@
+     static int numberOfStudents;
+ 
+     public static void main(String[] args) {
+-        Student one=new Student();
+-        one.name="Lesia";
+-        one.ID="123-64L";
++        Students firstStudent = new Students();
++        firstStudent.Name = "Daniel";
++        firstStudent.ID = "abc123";
+         numberOfStudents++;
+ 
+-        Students two=new Students();
+-        two.name="Nadiia";
+-        two.ID="56773-64-N";
++        Students secondStudent = new Students();
++        secondStudent.Name = "Nelli";
++        secondStudent.ID = "def456";
+         numberOfStudents++;
+ 
+-        Students three=new Students();
+-        three.name="Lesia";
+-        three.ID="123-64L";
++        Students thirdStudent = new Students();
++        thirdStudent.Name = "Mark";
++        thirdStudent.ID = "ghi789";
+         numberOfStudents++;
+ 
+-        System.out.println(numberOfStudents);
+-
+-
++        System.out.print("Total number of sudents: " + numberOfStudents);
+     }
+-
+ }
+ 
