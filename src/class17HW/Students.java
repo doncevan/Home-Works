@@ -22,7 +22,7 @@ public class Students {
     void printAverageMark() {
         int sumOfGrades = geometryGrade + chemistryGrade + biologyGrade;
         double average = sumOfGrades / 3;
-        System.out.println(average);
+        System.out.println(this.name + ":" + average);
 
     }
 }
