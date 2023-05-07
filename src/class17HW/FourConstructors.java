@@ -10,24 +10,27 @@ public class FourConstructors {
 
     private FourConstructors(String str) {
         this.str = str;
+        System.out.println(this.str);
     }
 
     public FourConstructors(int num) {
         this.num = num;
+        System.out.println(this.num);
     }
 
     FourConstructors() {
-
+        System.out.println("Default constructor");
     }
 
     protected FourConstructors(char symbol) {
         this.symbol = symbol;
+        System.out.println(this.symbol);
     }
 
     public static void main(String[] args) {
-        FourConstructors obj1 = new FourConstructors("word");
-        FourConstructors obj2 = new FourConstructors(3);
-        FourConstructors obj3 = new FourConstructors();
-        FourConstructors obj4 = new FourConstructors('&');
+        FourConstructors obj1 = new FourConstructors("word"); //      All
+        FourConstructors obj2 = new FourConstructors(3); //       are
+        FourConstructors obj3 = new FourConstructors();       //        accessible
+        FourConstructors obj4 = new FourConstructors('&');//       within the class
     }
 }

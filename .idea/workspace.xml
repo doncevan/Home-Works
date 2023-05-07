@@ -73,7 +73,7 @@
       <recent name="class08HW" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FourConstructorDifferentPackage">
+  <component name="RunManager" selected="Application.FourConstructors">
     <configuration name="FourConstructorDifferentPackage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="class17HW.TesterPackage.FourConstructorDifferentPackage" />
       <module name="Home Works" />
@@ -100,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class17HW.StudentTest" />
+    <configuration name="FourConstructorsDifferentClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class17HW.FourConstructorsDifferentClass" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
@@ -113,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task01Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class16HW.Task01Tester" />
+    <configuration name="StudentTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class17HW.StudentTest" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class16HW.*" />
+          <option name="PATTERN" value="class17HW.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FourConstructorDifferentPackage" />
-        <item itemvalue="Application.StudentTest" />
         <item itemvalue="Application.FourConstructors" />
+        <item itemvalue="Application.FourConstructorDifferentPackage" />
+        <item itemvalue="Application.FourConstructorsDifferentClass" />
+        <item itemvalue="Application.StudentTest" />
         <item itemvalue="Application.Task02" />
-        <item itemvalue="Application.Task01Tester" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683418212610</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="class17HW">
+      <created>1683418332694</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683418332694</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
