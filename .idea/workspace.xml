@@ -44,22 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/magre/eclipse-workspace/Home Works&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/magre/eclipse-workspace/Home Works",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\magre\eclipse-workspace\Home Works\src\class04HW" />
@@ -72,13 +73,13 @@
       <recent name="class08HW" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task02">
-    <configuration name="HW01DifferentLanguages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class14HW.HW01DifferentLanguages" />
+  <component name="RunManager" selected="Application.FourConstructorDifferentPackage">
+    <configuration name="FourConstructorDifferentPackage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class17HW.TesterPackage.FourConstructorDifferentPackage" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class14HW.*" />
+          <option name="PATTERN" value="class17HW.TesterPackage.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HW04Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class14HW.HW04Student" />
+    <configuration name="FourConstructors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class17HW.FourConstructors" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class14HW.*" />
+          <option name="PATTERN" value="class17HW.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Students" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class15HW.Students" />
+    <configuration name="StudentTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class17HW.StudentTest" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class15HW.*" />
+          <option name="PATTERN" value="class17HW.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FourConstructorDifferentPackage" />
+        <item itemvalue="Application.StudentTest" />
+        <item itemvalue="Application.FourConstructors" />
         <item itemvalue="Application.Task02" />
         <item itemvalue="Application.Task01Tester" />
-        <item itemvalue="Application.Students" />
-        <item itemvalue="Application.HW01DifferentLanguages" />
-        <item itemvalue="Application.HW04Student" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +207,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682957175004</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Class16HW">
+      <created>1683409040620</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683409040620</updated>
+    </task>
+    <task id="LOCAL-00009" summary="class17HW">
+      <created>1683418212610</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683418212610</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +239,8 @@
     <MESSAGE value="Learning to commit through IntelliJ" />
     <MESSAGE value="Class13HW" />
     <MESSAGE value="Class15HW" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class15HW" />
+    <MESSAGE value="Class16HW" />
+    <MESSAGE value="class17HW" />
+    <option name="LAST_COMMIT_MESSAGE" value="class17HW" />
   </component>
 </project>
