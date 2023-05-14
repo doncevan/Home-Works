@@ -68,12 +68,9 @@ class Dell extends Computer {
 class ComputerTester {
 
     public static void main(String[] args) {
-        Computer[] comp = new Computer[]{new Apple(), new Lenovo(), new HP(), new Dell()};
-        Computer[] var2 = comp;
-        int var3 = comp.length;
 
-        for(int var4 = 0; var4 < var3; ++var4) {
-            Computer brand = var2[var4];
+        Computer[] comp = new Computer[]{new Apple(), new Lenovo(), new HP(), new Dell()};
+        for (Computer brand  : comp) {
             if (brand instanceof Apple) {
                 ((Apple)brand).searchAppStore();
                 ((Apple)brand).liveStream();
@@ -88,6 +85,5 @@ class ComputerTester {
                 ((Dell)brand).watchVideo();
             }
         }
-
     }
 }
