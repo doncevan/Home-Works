@@ -24,7 +24,7 @@ public class Computer {
     }
 }
 class Apple extends Computer {
-
+@Override
     void liveStream() {
         System.out.println("Live streaming an event");
     }
@@ -34,9 +34,8 @@ class Apple extends Computer {
     }
 }
 class Lenovo extends Computer {
-    Lenovo() {
-    }
 
+@Override
     void surfWeb() {
         System.out.println("Reading webpages");
     }
@@ -46,7 +45,7 @@ class Lenovo extends Computer {
     }
 }
 class HP extends Computer {
-
+@Override
     void playMusic() {
         System.out.println("Calm music playing");
     }
@@ -56,7 +55,7 @@ class HP extends Computer {
     }
 }
 class Dell extends Computer {
-
+@Override
     void watchVideo() {
         System.out.println("Watching Java tutorial");
     }
