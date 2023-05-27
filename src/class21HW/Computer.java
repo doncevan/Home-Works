@@ -69,7 +69,7 @@ class ComputerTester {
 
     public static void main(String[] args) {
 
-        Computer[] comp = new Computer[]{new Apple(), new Lenovo(), new HP(), new Dell()};
+        Computer[] comp = {new Apple(), new Lenovo(), new HP(), new Dell()};
         for (Computer brand  : comp) {
             if (brand instanceof Apple) {
                 ((Apple)brand).searchAppStore();
