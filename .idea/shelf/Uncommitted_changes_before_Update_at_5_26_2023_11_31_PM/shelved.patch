@@ -1,0 +1,952 @@
+Index: src/class11GroupCodingTasks/D2Array8MaxMinNumVer2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package class11GroupCodingTasks;\r\n\r\npublic class D2Array8MaxMinNumVer2 {\r\n    public static void main(String[] args) {\r\n        int[] numbers = {83, 9, 2, -8, 115, -110};\r\n        int max = numbers[0];\r\n        int min = numbers[0];\r\n        for (int number : numbers) {\r\n            for (int i : numbers) {\r\n                if (number > max) {\r\n                    max = number;\r\n                } else if (i < min) {\r\n                    min = i;\r\n                }\r\n            }\r\n        }\r\n        System.out.println(\"Maximum number is: \" + max);\r\n        System.out.println(\"Minimum number is: \" + min);\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class11GroupCodingTasks/D2Array8MaxMinNumVer2.java b/src/class11GroupCodingTasks/D2Array8MaxMinNumVer2.java
+--- a/src/class11GroupCodingTasks/D2Array8MaxMinNumVer2.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class11GroupCodingTasks/D2Array8MaxMinNumVer2.java	(date 1685113020834)
+@@ -2,16 +2,14 @@
+ 
+ public class D2Array8MaxMinNumVer2 {
+     public static void main(String[] args) {
+-        int[] numbers = {83, 9, 2, -8, 115, -110};
++        int[] numbers = {-183, 9, 182, -8, 115, 116};
+         int max = numbers[0];
+         int min = numbers[0];
+         for (int number : numbers) {
+-            for (int i : numbers) {
+-                if (number > max) {
+-                    max = number;
+-                } else if (i < min) {
+-                    min = i;
+-                }
++            if (number > max) {
++                max = number;
++            } else if (number < min) {
++                min = number;
+             }
+         }
+         System.out.println("Maximum number is: " + max);
+Index: src/class23GroupExercise2/Task03NumberOfWordsInString.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class23GroupExercise2/Task03NumberOfWordsInString.java b/src/class23GroupExercise2/Task03NumberOfWordsInString.java
+--- a/src/class23GroupExercise2/Task03NumberOfWordsInString.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class23GroupExercise2/Task03NumberOfWordsInString.java	(date 1685117849404)
+@@ -1,0 +1,23 @@
++package class23GroupExercise2;
++
++import java.util.Scanner;
++
++    /*
++    Count the Number of Words in a String: Write a function to count the
++    number of words in a given string. Words are separated by spaces or
++    punctuation. For example, the input "Hello, world!" should return 2.
++    */
++public class Task03NumberOfWordsInString {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        System.out.println("Your input is expected on the next line:");
++        String input = scan.nextLine();
++        int output = countWords(input);
++        System.out.println(output);
++    }
++
++    public static int countWords(String s) {
++        String[] words = s.split("\\s+");
++        return words.length;
++    }
++}
+Index: src/class23GroupExercise2/Task04AreStringsAnagrams.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class23GroupExercise2/Task04AreStringsAnagrams.java b/src/class23GroupExercise2/Task04AreStringsAnagrams.java
+--- a/src/class23GroupExercise2/Task04AreStringsAnagrams.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class23GroupExercise2/Task04AreStringsAnagrams.java	(date 1685119712670)
+@@ -1,0 +1,31 @@
++package class23GroupExercise2;
++
++import java.util.Arrays;
++import java.util.Scanner;
++
++    /*
++    Check if Two Strings are Anagrams: Given two strings, determine if
++    they are anagrams, meaning they contain the same characters in a
++    different order. For example, "listen" and "silent" are anagrams.
++     */
++public class Task04AreStringsAnagrams {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        System.out.println("Input of two strings are expected on next lines:");
++        String input1 = scan.nextLine();
++        String input2 = scan.nextLine();
++        boolean output = areAnagrams(input1, input2);
++        System.out.println(output);
++    }
++
++    public static boolean areAnagrams(String s1, String s2) {
++        if (s1.length() != s2.length()) {
++            return false;
++        }
++        char[] s1Array = s1.toCharArray();
++        char[] s2Array = s2.toCharArray();
++        Arrays.sort(s1Array);
++        Arrays.sort(s2Array);
++        return Arrays.equals(s1Array, s2Array);
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"67368285-fa14-43c7-8012-98879bc9803e\" name=\"Changes\" comment=\"Learning to commit through IntelliJ\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"32db1e7f-54b8-4021-aa1d-597128b26c97\" />\r\n        <option name=\"url\" value=\"https://github.com/doncevan/Home-Works.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Oo7gnAspHXbbmoTCd1tKxHL2Mi\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n    <ConfirmationsSetting value=\"2\" id=\"Remove\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/magre/eclipse-workspace/Home Works&quot;,\r\n    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [\r\n      &quot;directory&quot;,\r\n      &quot;module&quot;,\r\n      &quot;repository&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\magre\\eclipse-workspace\\Home Works\\src\\class04HW\" />\r\n      <recent name=\"C:\\Users\\magre\\eclipse-workspace\\Home Works\\src\\class11GroupCodingTasks\" />\r\n      <recent name=\"C:\\Users\\magre\\eclipse-workspace\\Home Works\\src\\class12HW\" />\r\n      <recent name=\"C:\\Users\\magre\\eclipse-workspace\\Home Works\\src\\class10HW\" />\r\n      <recent name=\"C:\\Users\\magre\\eclipse-workspace\\Home Works\\src\\class09HW\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"class08HW\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.ComputerTester\">\r\n    <configuration name=\"AX\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"class20HW.AX\" />\r\n      <module name=\"Home Works\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"class20HW.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ComputerTester\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"class21HW.ComputerTester\" />\r\n      <module name=\"Home Works\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"class21HW.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreditCardTester (1)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"class20HW.CreditCardTester\" />\r\n      <module name=\"Home Works\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"class20HW.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreditCardTester\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"class20HW.CreditCardTester\" />\r\n      <module name=\"Home Works\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"class20HW.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"DegreeTester (2)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"class20HW.DegreeTester\" />\r\n      <module name=\"Home Works\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"class20HW.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.ComputerTester\" />\r\n        <item itemvalue=\"Application.DegreeTester (2)\" />\r\n        <item itemvalue=\"Application.CreditCardTester (1)\" />\r\n        <item itemvalue=\"Application.CreditCardTester\" />\r\n        <item itemvalue=\"Application.AX\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"67368285-fa14-43c7-8012-98879bc9803e\" name=\"Changes\" comment=\"\" />\r\n      <created>1682215196908</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1682215196908</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Learning to commit through IntelliJ\">\r\n      <created>1682218591170</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682218591170</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Learning to commit through IntelliJ\">\r\n      <created>1682220771766</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682220771766</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Learning to commit through IntelliJ\">\r\n      <created>1682220973357</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682220973357</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Learning to commit through IntelliJ\">\r\n      <created>1682260568492</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682260568492</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Class13HW\">\r\n      <created>1682699092740</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682699092740</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Class15HW\">\r\n      <created>1682907157323</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682907157323</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Class15HW\">\r\n      <created>1682957175004</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682957175004</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Class16HW\">\r\n      <created>1683409040620</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683409040620</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"class17HW\">\r\n      <created>1683418212610</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683418212610</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"class17HW\">\r\n      <created>1683418332694</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683418332694</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"class17HW\">\r\n      <created>1683420181324</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683420181324</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"class17HW\">\r\n      <created>1683420529401</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683420529401</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"class18HW\">\r\n      <created>1683493791451</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683493791451</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"class18HW\">\r\n      <created>1683493811991</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683493811991</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"class20HW\">\r\n      <created>1683912861938</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683912861939</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"class21HW\">\r\n      <created>1684033560682</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684033560682</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"class21HW\">\r\n      <created>1684033806870</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684033806870</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"class21HW\">\r\n      <created>1684034713712</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684034713712</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"class21HW\">\r\n      <created>1684034879387</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684034879387</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"20\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Learning to commit through IntelliJ\" />\r\n    <MESSAGE value=\"Class13HW\" />\r\n    <MESSAGE value=\"Class15HW\" />\r\n    <MESSAGE value=\"Class16HW\" />\r\n    <MESSAGE value=\"class17HW\" />\r\n    <MESSAGE value=\"class18HW\" />\r\n    <MESSAGE value=\"class20HW\" />\r\n    <MESSAGE value=\"class21HW\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"class21HW\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/.idea/workspace.xml	(date 1685157986686)
+@@ -5,7 +5,23 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="67368285-fa14-43c7-8012-98879bc9803e" name="Changes" comment="Learning to commit through IntelliJ">
++      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task01ReverseString.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task02IsPalindrome.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task03NumberOfWordsInString.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task04AreStringsAnagrams.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task05FirstNonRepeatingCharacter.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task06Shape.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task07AverageOfMarks.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task08Car.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task09Registration.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task10WebDriver.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1.xml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1/shelved.patch" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array6PrimeOrNotVer3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array6PrimeOrNotVer3.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array8MaxMinNumVer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array8MaxMinNumVer2.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array9SecondLargest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array9SecondLargest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/class21HW/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class21HW/Computer.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -16,6 +32,7 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="Class" />
++        <option value="Interface" />
+       </list>
+     </option>
+   </component>
+@@ -75,13 +92,13 @@
+       <recent name="class08HW" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Application.ComputerTester">
+-    <configuration name="AX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="class20HW.AX" />
++  <component name="RunManager" selected="Application.Tester">
++    <configuration name="ShapeTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.ShapeTester" />
+       <module name="Home Works" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="class20HW.*" />
++          <option name="PATTERN" value="class23GroupExercise2.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -89,12 +106,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="ComputerTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="class21HW.ComputerTester" />
++    <configuration name="Task07AverageOfMarks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Task07AverageOfMarks" />
+       <module name="Home Works" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="class21HW.*" />
++          <option name="PATTERN" value="class23GroupExercise2.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -102,12 +119,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="CreditCardTester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="class20HW.CreditCardTester" />
++    <configuration name="Task08Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Task08Car" />
+       <module name="Home Works" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="class20HW.*" />
++          <option name="PATTERN" value="class23GroupExercise2.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -115,12 +132,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="CreditCardTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="class20HW.CreditCardTester" />
++    <configuration name="Task09Registration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Task09Registration" />
+       <module name="Home Works" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="class20HW.*" />
++          <option name="PATTERN" value="class23GroupExercise2.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -128,12 +145,12 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="DegreeTester (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="class20HW.DegreeTester" />
++    <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Tester" />
+       <module name="Home Works" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="class20HW.*" />
++          <option name="PATTERN" value="class23GroupExercise2.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -143,11 +160,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="Application.ComputerTester" />
+-        <item itemvalue="Application.DegreeTester (2)" />
+-        <item itemvalue="Application.CreditCardTester (1)" />
+-        <item itemvalue="Application.CreditCardTester" />
+-        <item itemvalue="Application.AX" />
++        <item itemvalue="Application.Tester" />
++        <item itemvalue="Application.Task09Registration" />
++        <item itemvalue="Application.Task08Car" />
++        <item itemvalue="Application.Task07AverageOfMarks" />
++        <item itemvalue="Application.ShapeTester" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -293,7 +310,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1684034879387</updated>
+     </task>
+-    <option name="localTasksCounter" value="20" />
++    <task id="LOCAL-00020" summary="class21HW">
++      <created>1684035273343</created>
++      <option name="number" value="00020" />
++      <option name="presentableId" value="LOCAL-00020" />
++      <option name="project" value="LOCAL" />
++      <updated>1684035273343</updated>
++    </task>
++    <option name="localTasksCounter" value="21" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+Index: src/class21HW/Computer.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package class21HW;\r\n\r\npublic class Computer {\r\n    String display;\r\n    String keyboard;\r\n    int ramSize;\r\n\r\n\r\n\r\n    void playMusic() {\r\n        System.out.println(\"Calm music playing\");\r\n    }\r\n\r\n    void surfWeb() {\r\n        System.out.println(\"Reading webpages\");\r\n    }\r\n\r\n    void watchVideo() {\r\n        System.out.println(\"Watching Java tutorial\");\r\n    }\r\n\r\n    void liveStream() {\r\n        System.out.println(\"Live streaming an event\");\r\n    }\r\n}\r\nclass Apple extends Computer {\r\n@Override\r\n    void liveStream() {\r\n        System.out.println(\"Live streaming an event\");\r\n    }\r\n\r\n    void searchAppStore() {\r\n        System.out.println(\"Searching for an app\");\r\n    }\r\n}\r\nclass Lenovo extends Computer {\r\n\r\n@Override\r\n    void surfWeb() {\r\n        System.out.println(\"Reading webpages\");\r\n    }\r\n\r\n    void shopAmazon() {\r\n        System.out.println(\"Shopping with Prime on Amazon\");\r\n    }\r\n}\r\nclass HP extends Computer {\r\n@Override\r\n    void playMusic() {\r\n        System.out.println(\"Calm music playing\");\r\n    }\r\n\r\n    void studyOnline() {\r\n        System.out.println(\"Studying online for test\");\r\n    }\r\n}\r\nclass Dell extends Computer {\r\n@Override\r\n    void watchVideo() {\r\n        System.out.println(\"Watching Java tutorial\");\r\n    }\r\n\r\n    void playGames() {\r\n        System.out.println(\"Playing Minecraft\");\r\n    }\r\n}\r\n\r\nclass ComputerTester {\r\n\r\n    public static void main(String[] args) {\r\n\r\n        Computer[] comp = new Computer[]{new Apple(), new Lenovo(), new HP(), new Dell()};\r\n        for (Computer brand  : comp) {\r\n            if (brand instanceof Apple) {\r\n                ((Apple)brand).searchAppStore();\r\n                ((Apple)brand).liveStream();\r\n            } else if (brand instanceof Lenovo) {\r\n                ((Lenovo)brand).shopAmazon();\r\n                ((Lenovo)brand).surfWeb();\r\n            } else if (brand instanceof HP) {\r\n                ((HP)brand).studyOnline();\r\n                ((HP)brand).playMusic();\r\n            } else if (brand instanceof Dell) {\r\n                ((Dell)brand).playGames();\r\n                ((Dell)brand).watchVideo();\r\n            }\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class21HW/Computer.java b/src/class21HW/Computer.java
+--- a/src/class21HW/Computer.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class21HW/Computer.java	(date 1684035357921)
+@@ -69,7 +69,7 @@
+ 
+     public static void main(String[] args) {
+ 
+-        Computer[] comp = new Computer[]{new Apple(), new Lenovo(), new HP(), new Dell()};
++        Computer[] comp = {new Apple(), new Lenovo(), new HP(), new Dell()};
+         for (Computer brand  : comp) {
+             if (brand instanceof Apple) {
+                 ((Apple)brand).searchAppStore();
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1.xml
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1.xml
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1.xml	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ /dev/null	(revision da0ca8a7df52321c469f539340be6d4952085c19)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1" date="1684033785996" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 5/13/2023 11:09 PM" />
+-</changelist>
+\ No newline at end of file
+Index: src/class23GroupExercise2/Task07AverageOfMarks.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class23GroupExercise2/Task07AverageOfMarks.java b/src/class23GroupExercise2/Task07AverageOfMarks.java
+--- a/src/class23GroupExercise2/Task07AverageOfMarks.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class23GroupExercise2/Task07AverageOfMarks.java	(date 1685126638680)
+@@ -1,0 +1,57 @@
++package class23GroupExercise2;
++    /*
++    We have to calculate the average of marks obtained in three subjects by student A and by student B.
++    Create class 'Marks' with an abstract method 'getPercentage' that will be returning the average percentage
++    of marks. Provide implementation of abstract method in classes 'A' and 'B'. The constructor of
++    student A takes the marks in three subjects as its parameters and the marks in four subjects as its
++    parameters for student B. Test your code
++    */
++public class Task07AverageOfMarks {
++    public static void main(String[] args) {
++        Marks studentA = new A(90, 95, 85);
++        System.out.println(studentA.getPercentage());
++
++        Marks studentB = new B(65, 80, 70, 75);
++        System.out.println(studentB.getPercentage());
++    }
++}
++
++abstract class Marks {
++    abstract double getPercentage();
++}
++
++class A extends Marks {
++    private int subject1;
++    private int subject2;
++    private int subject3;
++
++    public A(int subject1, int subject2, int subject3) {
++        this.subject1 = subject1;
++        this.subject2 = subject2;
++        this.subject3 = subject3;
++    }
++
++    @Override
++    double getPercentage() {
++        return (subject1 + subject2 + subject3) / 3.0;
++    }
++}
++
++class B extends Marks {
++    private int subject1;
++    private int subject2;
++    private int subject3;
++    private int subject4;
++
++    public B(int subject1, int subject2, int subject3, int subject4) {
++        this.subject1 = subject1;
++        this.subject2 = subject2;
++        this.subject3 = subject3;
++        this.subject4 = subject4;
++    }
++
++    @Override
++    double getPercentage() {
++        return (subject1 + subject2 + subject3 + subject4) / 4.0;
++    }
++}
+Index: src/class23GroupExercise2/Task02IsPalindrome.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class23GroupExercise2/Task02IsPalindrome.java b/src/class23GroupExercise2/Task02IsPalindrome.java
+--- a/src/class23GroupExercise2/Task02IsPalindrome.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class23GroupExercise2/Task02IsPalindrome.java	(date 1685117518921)
+@@ -1,0 +1,22 @@
++package class23GroupExercise2;
++
++import java.util.Scanner;
++
++    /*
++    Check if a String is Palindrome: Determine whether a given string is
++    a palindrome, which means it reads the same forwards and
++    backward. For example: "madam", "civic", "radar", "level", "racer" are the palindromes.
++    */
++public class Task02IsPalindrome {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        System.out.println("Your input is expected on the next line:");
++        String input = scan.nextLine();
++        boolean output = isPalindrome(input);
++        System.out.println(output);
++    }
++
++    public static boolean isPalindrome(String s) {
++        return s.equals(new StringBuilder(s).reverse().toString());
++    }
++}
+Index: src/class23GroupExercise2/Task09Registration.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package class23GroupExercise2;\r\n/*\r\n        Create Registration Class in which you would have variables as\r\n        email, userName and password that have an access scope only\r\n        within its own class. After creating an object of the class user should\r\n        be able to call methods and in each method separately pass values\r\n        to set users email, username and password.\r\n       Requirements:\r\n       A. Valid email consider to be only yahoo\r\n       B. Valid userName and password cannot be empty and should be of\r\n       length larger than 6 characters. Also, valid password cannot contain\r\n       userName.\r\n         */\r\npublic class Task09RegistrationClass {\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class23GroupExercise2/Task09Registration.java b/src/class23GroupExercise2/Task09Registration.java
+--- a/src/class23GroupExercise2/Task09Registration.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class23GroupExercise2/Task09Registration.java	(date 1685133213196)
+@@ -1,16 +1,48 @@
+ package class23GroupExercise2;
++
+ /*
+-        Create Registration Class in which you would have variables as
+-        email, userName and password that have an access scope only
+-        within its own class. After creating an object of the class user should
+-        be able to call methods and in each method separately pass values
+-        to set users email, username and password.
+-       Requirements:
+-       A. Valid email consider to be only yahoo
+-       B. Valid userName and password cannot be empty and should be of
+-       length larger than 6 characters. Also, valid password cannot contain
+-       userName.
+-         */
+-public class Task09RegistrationClass {
++   Create Registration Class in which you would have variables as email, userName and password that have
++    an access scope only within its own class. After creating an object of the class user should be able
++    to call methods and in each method separately pass values to set users email, username and password.
++   Requirements:
++   A. Valid email consider to be only yahoo
++   B. Valid userName and password cannot be empty and should be of length larger than 6 characters.
++    Also, valid password cannot contain userName.
++*/
++public class Task09Registration {
++    public static void main(String[] args) {
++        Registration user = new Registration();
++        user.setEmail("ivan@yahoo.com");
++        user.setUserName("IvanDon");
++        user.setPassword("password");
++    }
++}
++
++class Registration {
++    private String email, userName, password;
+ 
++    public void setEmail(String email) {
++        if (email.endsWith("@yahoo.com")) {
++            System.out.println("Valid email");
++        } else {
++            System.out.println("Invalid email. Only yahoo emails are allowed.");
++        }
++    }
++
++    public void setUserName(String userName) {
++        if (userName != null && userName.length() > 6) {
++            this.userName = userName;
++            System.out.println("Valid username");
++        } else {
++            System.out.println("Invalid userName. It cannot be empty and must be longer than 6 characters.");
++        }
++    }
++
++    public void setPassword(String password) {
++        if (password != null && password.length() > 6 && !password.contains(userName)) {
++            System.out.println("Valid password");
++        } else {
++            System.out.println("Invalid password. It cannot be empty, must be longer than 6 characters, and cannot contain the userName.");
++        }
++    }
+ }
+Index: src/class23GroupExercise2/Task08Car.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class23GroupExercise2/Task08Car.java b/src/class23GroupExercise2/Task08Car.java
+--- a/src/class23GroupExercise2/Task08Car.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class23GroupExercise2/Task08Car.java	(date 1685127969734)
+@@ -1,0 +1,70 @@
++package class23GroupExercise2;
++
++    /*
++    Create a Class Car that would have the following fields: price and color, and method calculateSalePrice()
++     which should be returning a price of the car.
++    Create 2 subclasses: Sedan and Truck. The Truck class has a field as weight and has its own implementation
++     of calculateSalePrice() method in which returned price is calculated as following: if weight>2000 then
++      returned car price should include 10% discount, otherwise 20% discount.
++    The Sedan class has field as length and also does it its own implementation of calculateSalePrice():
++    if length of sedan is >20 feet then returned car price should include 5% discount, otherwise 10% discount
++    */
++public class Task08Car {
++    public static void main(String[] args) {
++        Car sedan = new Sedan(20000, "white", 18);
++        System.out.println("This " + sedan.color + " sedan's price is: $" + sedan.calculateSalePrice());
++
++        Car truck = new Truck(40000, "black", 3500);
++        System.out.println("This " + truck.color + " track's price is: $" + truck.calculateSalePrice());
++    }
++}
++
++class Car {
++    protected double price;
++    protected String color;
++
++    public Car(double price, String color) {
++        this.price = price;
++        this.color = color;
++    }
++
++    public double calculateSalePrice() {
++        return price;
++    }
++}
++
++class Sedan extends Car {
++    private int length;
++
++    public Sedan(double carPrice, String color, int length) {
++        super(carPrice, color);
++        this.length = length;
++    }
++
++    @Override
++    public double calculateSalePrice() {
++        if (length > 20) {
++            return price * 0.95;
++        } else {
++            return price * 0.9;
++        }
++    }
++}
++
++class Truck extends Car {
++    private int weight;
++
++    public Truck(double price, String color, int weight) {
++        super(price, color);
++        this.weight = weight;
++    }
++
++    @Override
++    public double calculateSalePrice() {
++        if (weight > 2000) {
++            return price * 0.9;
++        } else {
++            return price * 0.8;
++        }
++    }
++}
+Index: src/class23GroupExercise2/Task05FirstNonRepeatingCharacter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class23GroupExercise2/Task05FirstNonRepeatingCharacter.java b/src/class23GroupExercise2/Task05FirstNonRepeatingCharacter.java
+--- a/src/class23GroupExercise2/Task05FirstNonRepeatingCharacter.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class23GroupExercise2/Task05FirstNonRepeatingCharacter.java	(date 1685157759698)
+@@ -1,0 +1,31 @@
++package class23GroupExercise2;
++
++import java.util.Scanner;
++
++    /*
++    Find the First Non-Repeating Character in a String: Given a string,
++    find and return the first non-repeating character. For example, in the
++    string "abracadabra", the first non-repeating character is 'c'.
++    */
++public class Task05FirstNonRepeatingCharacter {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        System.out.println("String is expected on the next line:");
++        String input = scan.nextLine();
++        Character output = firstNonRepeatingCharacter(input);
++        System.out.println(output);
++    }
++
++    public static Character firstNonRepeatingCharacter(String s) {
++        int[] charCounts = new int[50];
++        for (int i = 0; i < s.length(); i++) {
++            charCounts[s.charAt(i) - 'a']++;
++        }
++        for (int i = 0; i < s.length(); i++) {
++            if (charCounts[s.charAt(i) - 'a'] == 1) {
++                return s.charAt(i);
++            }
++        }
++        return null;
++    }
++}
+Index: src/class23GroupExercise2/Task06Shape.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class23GroupExercise2/Task06Shape.java b/src/class23GroupExercise2/Task06Shape.java
+--- a/src/class23GroupExercise2/Task06Shape.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class23GroupExercise2/Task06Shape.java	(date 1685124531188)
+@@ -1,0 +1,59 @@
++package class23GroupExercise2;
++
++    /*
++    Create an Interface 'Shape' with undefined methods as calculateArea and calculatePerimeter.
++    Create 2 classes Circle & Square that implements functionality defined in the Shape Interface. Test your code.
++    */
++public interface Task06Shape {
++    double calculateArea();
++
++    double calculatePerimeter();
++}
++
++class Circle implements Task06Shape {
++    private double radius;
++
++    public Circle(double radius) {
++        this.radius = radius;
++    }
++
++    @Override
++    public double calculateArea() {
++        return Math.PI * radius * radius;
++    }
++
++    @Override
++    public double calculatePerimeter() {
++        return 2 * Math.PI * radius;
++    }
++}
++
++class Square implements Task06Shape {
++    private double side;
++
++    public Square(double side) {
++        this.side = side;
++    }
++
++    @Override
++    public double calculateArea() {
++        return side * side;
++    }
++
++    @Override
++    public double calculatePerimeter() {
++        return 4 * side;
++    }
++}
++
++class ShapeTester {
++    public static void main(String[] args) {
++        Task06Shape circle = new Circle(4);
++        System.out.println(circle.calculateArea());
++        System.out.println(circle.calculatePerimeter());
++
++        Task06Shape square = new Square(7);
++        System.out.println(square.calculateArea());
++        System.out.println(square.calculatePerimeter());
++    }
++}
+Index: src/class11GroupCodingTasks/D2Array6PrimeOrNotVer3.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package class11GroupCodingTasks;\r\n\r\npublic class D2Array6PrimeOrNotVer3 {\r\n    public static void main(String[] args) {\r\n        int num = 11;\r\n        int count = 0;\r\n        for (int i = 1; i <= num; i++) {\r\n            if (num % i == 0) {\r\n                count++;\r\n            }\r\n        }\r\n        if (count == 2) {\r\n            System.out.println(\"It is a Prime number \");\r\n        } else {\r\n            System.out.println(\"It is not a prime number \");\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class11GroupCodingTasks/D2Array6PrimeOrNotVer3.java b/src/class11GroupCodingTasks/D2Array6PrimeOrNotVer3.java
+--- a/src/class11GroupCodingTasks/D2Array6PrimeOrNotVer3.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class11GroupCodingTasks/D2Array6PrimeOrNotVer3.java	(date 1684800811036)
+@@ -2,7 +2,7 @@
+ 
+ public class D2Array6PrimeOrNotVer3 {
+     public static void main(String[] args) {
+-        int num = 11;
++        int num = 1;
+         int count = 0;
+         for (int i = 1; i <= num; i++) {
+             if (num % i == 0) {
+Index: src/class11GroupCodingTasks/D2Array9SecondLargest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package class11GroupCodingTasks;\r\n\r\npublic class D2Array9SecondLargest {\r\n    public static void main(String[] args) {\r\n        //Write a java program to find the second-secondLargest number in the array.\r\n        int[] numbers = {112, 17, 54, 6, 8, 111, -46, 110};\r\n        int largest = numbers[1];\r\n        int secondLargest = numbers[0];\r\n        for (int number : numbers) {\r\n            if (number > largest) {\r\n                secondLargest = largest;\r\n                largest = number;\r\n            } else if (number > secondLargest) {\r\n                secondLargest = number;\r\n            }\r\n        }\r\n        System.out.println(\"The second largest number is: \" + secondLargest);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class11GroupCodingTasks/D2Array9SecondLargest.java b/src/class11GroupCodingTasks/D2Array9SecondLargest.java
+--- a/src/class11GroupCodingTasks/D2Array9SecondLargest.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class11GroupCodingTasks/D2Array9SecondLargest.java	(date 1685113101433)
+@@ -2,7 +2,7 @@
+ 
+ public class D2Array9SecondLargest {
+     public static void main(String[] args) {
+-        //Write a java program to find the second-secondLargest number in the array.
++        //Write a java program to find the secondLargest number in the array.
+         int[] numbers = {112, 17, 54, 6, 8, 111, -46, 110};
+         int largest = numbers[1];
+         int secondLargest = numbers[0];
+Index: src/class23GroupExercise2/Task01ReverseString.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class23GroupExercise2/Task01ReverseString.java b/src/class23GroupExercise2/Task01ReverseString.java
+--- a/src/class23GroupExercise2/Task01ReverseString.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class23GroupExercise2/Task01ReverseString.java	(date 1685117597046)
+@@ -1,0 +1,21 @@
++package class23GroupExercise2;
++
++import java.util.Scanner;
++
++    /*
++    Reverse a String: Write a function to reverse a given string. For
++    example, given the input "Hello", the output should be "olleH".
++    */
++public class Task01ReverseString {
++    public static void main(String[] args) {
++        Scanner scan = new Scanner(System.in);
++        System.out.println("Your input is expected on the next line:");
++        String input = scan.nextLine();
++        String output = reverseString(input);
++        System.out.println(output);
++    }
++
++    public static String reverseString(String s) {
++        return new StringBuilder(s).reverse().toString();
++    }
++}
+Index: src/class23GroupExercise2/Task10WebDriver.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/class23GroupExercise2/Task10WebDriver.java b/src/class23GroupExercise2/Task10WebDriver.java
+--- a/src/class23GroupExercise2/Task10WebDriver.java	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ b/src/class23GroupExercise2/Task10WebDriver.java	(date 1685137683918)
+@@ -1,0 +1,137 @@
++package class23GroupExercise2;
++
++    /*
++    Provide Implementation for the diagram below. Then create a test class in which you need to create
++    Objects of ChromeDriver, FirefoxDrive and SafariDriver classes and see which methods available to them.
++    */
++public interface Task10WebDriver {
++    void open();
++
++    void close();
++
++    String getTitle();
++}
++
++interface TakesScreenshot {
++    void getScreenshot();
++}
++
++interface RemoteWebDriver extends Task10WebDriver, TakesScreenshot {
++    void navigate();
++
++    @Override
++    default String getTitle() {
++        return null;
++    }
++}
++
++class ChromeDriver implements RemoteWebDriver {
++
++    @Override
++    public void open() {
++        System.out.println("Open Chrome");
++    }
++
++    @Override
++    public void close() {
++        System.out.println("Close Chrome");
++    }
++
++    @Override
++    public String getTitle() {
++        return "Chrome Title";
++    }
++
++    @Override
++    public void navigate() {
++        System.out.println("Navigate to Chrome");
++    }
++
++    @Override
++    public void getScreenshot() {
++        System.out.println("Chrome screenshot");
++    }
++}
++
++class FirefoxDriver implements RemoteWebDriver {
++
++    @Override
++    public void open() {
++        System.out.println("Open Firefox");
++    }
++
++    @Override
++    public void close() {
++        System.out.println("Close Firefox");
++    }
++
++    @Override
++    public String getTitle() {
++        return "Firefox Title";
++    }
++
++    @Override
++    public void getScreenshot() {
++        System.out.println("Firefox screenshot");
++    }
++
++    @Override
++    public void navigate() {
++        System.out.println("Navigate to Firefox");
++    }
++}
++
++class SafariDriver implements RemoteWebDriver {
++
++    @Override
++    public void open() {
++        System.out.println("Open Safari");
++    }
++
++    @Override
++    public void close() {
++        System.out.println("Close Safari");
++    }
++
++    @Override
++    public String getTitle() {
++        return "Safari Title";
++    }
++
++    @Override
++    public void getScreenshot() {
++        System.out.println("Safari screenshot");
++    }
++
++    @Override
++    public void navigate() {
++        System.out.println("Navigate to Safari");
++    }
++}
++
++class Tester {
++    public static void main(String[] args) {
++        ChromeDriver chrome = new ChromeDriver();
++        chrome.open();
++        chrome.close();
++        System.out.println(chrome.getTitle());
++        chrome.navigate();
++        chrome.getScreenshot();
++
++        System.out.println("...............................");
++        FirefoxDriver firefox = new FirefoxDriver();
++        firefox.open();
++        firefox.close();
++        System.out.println(firefox.getTitle());
++        firefox.navigate();
++        firefox.getScreenshot();
++
++        System.out.println(".................................");
++        SafariDriver safari = new SafariDriver();
++        safari.open();
++        safari.close();
++        System.out.println(safari.getTitle());
++        safari.navigate();
++        safari.getScreenshot();
++    }
++}
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1/shelved.patch	(revision da0ca8a7df52321c469f539340be6d4952085c19)
++++ /dev/null	(revision da0ca8a7df52321c469f539340be6d4952085c19)
+@@ -1,84 +0,0 @@
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"67368285-fa14-43c7-8012-98879bc9803e\" name=\"Changes\" comment=\"Learning to commit through IntelliJ\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"32db1e7f-54b8-4021-aa1d-597128b26c97\" />\r\n        <option name=\"url\" value=\"https://github.com/doncevan/Home-Works.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Oo7gnAspHXbbmoTCd1tKxHL2Mi\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n    <ConfirmationsSetting value=\"2\" id=\"Remove\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/magre/eclipse-workspace/Home Works&quot;,\r\n    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;\r\n  },\r\n  &quot;keyToStringList&quot;: {\r\n    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [\r\n      &quot;directory&quot;,\r\n      &quot;module&quot;,\r\n      &quot;repository&quot;\r\n    ]\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\magre\\eclipse-workspace\\Home Works\\src\\class04HW\" />\r\n      <recent name=\"C:\\Users\\magre\\eclipse-workspace\\Home Works\\src\\class11GroupCodingTasks\" />\r\n      <recent name=\"C:\\Users\\magre\\eclipse-workspace\\Home Works\\src\\class12HW\" />\r\n      <recent name=\"C:\\Users\\magre\\eclipse-workspace\\Home Works\\src\\class10HW\" />\r\n      <recent name=\"C:\\Users\\magre\\eclipse-workspace\\Home Works\\src\\class09HW\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"class08HW\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.DegreeTester (2)\">\r\n    <configuration name=\"AX (1)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"class20HW.AX\" />\r\n      <module name=\"Home Works\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"class20HW.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"AX\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"class20HW.AX\" />\r\n      <module name=\"Home Works\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"class20HW.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreditCardTester (1)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"class20HW.CreditCardTester\" />\r\n      <module name=\"Home Works\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"class20HW.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreditCardTester\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"class20HW.CreditCardTester\" />\r\n      <module name=\"Home Works\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"class20HW.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"DegreeTester (2)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"class20HW.DegreeTester\" />\r\n      <module name=\"Home Works\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"class20HW.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.DegreeTester (2)\" />\r\n        <item itemvalue=\"Application.CreditCardTester (1)\" />\r\n        <item itemvalue=\"Application.CreditCardTester\" />\r\n        <item itemvalue=\"Application.AX\" />\r\n        <item itemvalue=\"Application.AX (1)\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"67368285-fa14-43c7-8012-98879bc9803e\" name=\"Changes\" comment=\"\" />\r\n      <created>1682215196908</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1682215196908</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Learning to commit through IntelliJ\">\r\n      <created>1682218591170</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682218591170</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Learning to commit through IntelliJ\">\r\n      <created>1682220771766</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682220771766</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Learning to commit through IntelliJ\">\r\n      <created>1682220973357</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682220973357</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Learning to commit through IntelliJ\">\r\n      <created>1682260568492</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682260568492</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Class13HW\">\r\n      <created>1682699092740</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682699092740</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Class15HW\">\r\n      <created>1682907157323</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682907157323</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Class15HW\">\r\n      <created>1682957175004</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682957175004</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Class16HW\">\r\n      <created>1683409040620</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683409040620</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"class17HW\">\r\n      <created>1683418212610</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683418212610</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"class17HW\">\r\n      <created>1683418332694</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683418332694</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"class17HW\">\r\n      <created>1683420181324</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683420181324</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"class17HW\">\r\n      <created>1683420529401</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683420529401</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"class18HW\">\r\n      <created>1683493791451</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683493791451</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"class18HW\">\r\n      <created>1683493811991</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1683493811991</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"15\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Learning to commit through IntelliJ\" />\r\n    <MESSAGE value=\"Class13HW\" />\r\n    <MESSAGE value=\"Class15HW\" />\r\n    <MESSAGE value=\"Class16HW\" />\r\n    <MESSAGE value=\"class17HW\" />\r\n    <MESSAGE value=\"class18HW\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"class18HW\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	
+-+++ b/.idea/workspace.xml	
+-@@ -75,8 +75,8 @@
+-       <recent name="class08HW" />
+-     </key>
+-   </component>
+--  <component name="RunManager" selected="Application.DegreeTester (2)">
+--    <configuration name="AX (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-+  <component name="RunManager" selected="Application.ComputerTester">
+-+    <configuration name="AX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-       <option name="MAIN_CLASS_NAME" value="class20HW.AX" />
+-       <module name="Home Works" />
+-       <extension name="coverage">
+-@@ -89,12 +89,12 @@
+-         <option name="Make" enabled="true" />
+-       </method>
+-     </configuration>
+--    <configuration name="AX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+--      <option name="MAIN_CLASS_NAME" value="class20HW.AX" />
+-+    <configuration name="ComputerTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-+      <option name="MAIN_CLASS_NAME" value="class21HW.ComputerTester" />
+-       <module name="Home Works" />
+-       <extension name="coverage">
+-         <pattern>
+--          <option name="PATTERN" value="class20HW.*" />
+-+          <option name="PATTERN" value="class21HW.*" />
+-           <option name="ENABLED" value="true" />
+-         </pattern>
+-       </extension>
+-@@ -143,11 +143,11 @@
+-     </configuration>
+-     <recent_temporary>
+-       <list>
+-+        <item itemvalue="Application.ComputerTester" />
+-         <item itemvalue="Application.DegreeTester (2)" />
+-         <item itemvalue="Application.CreditCardTester (1)" />
+-         <item itemvalue="Application.CreditCardTester" />
+-         <item itemvalue="Application.AX" />
+--        <item itemvalue="Application.AX (1)" />
+-       </list>
+-     </recent_temporary>
+-   </component>
+-@@ -258,7 +258,21 @@
+-       <option name="project" value="LOCAL" />
+-       <updated>1683493811991</updated>
+-     </task>
+--    <option name="localTasksCounter" value="15" />
+-+    <task id="LOCAL-00015" summary="class20HW">
+-+      <created>1683912861938</created>
+-+      <option name="number" value="00015" />
+-+      <option name="presentableId" value="LOCAL-00015" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1683912861939</updated>
+-+    </task>
+-+    <task id="LOCAL-00016" summary="class21HW">
+-+      <created>1684033560682</created>
+-+      <option name="number" value="00016" />
+-+      <option name="presentableId" value="LOCAL-00016" />
+-+      <option name="project" value="LOCAL" />
+-+      <updated>1684033560682</updated>
+-+    </task>
+-+    <option name="localTasksCounter" value="17" />
+-     <servers />
+-   </component>
+-   <component name="Vcs.Log.Tabs.Properties">
+-@@ -279,6 +293,8 @@
+-     <MESSAGE value="Class16HW" />
+-     <MESSAGE value="class17HW" />
+-     <MESSAGE value="class18HW" />
+--    <option name="LAST_COMMIT_MESSAGE" value="class18HW" />
+-+    <MESSAGE value="class20HW" />
+-+    <MESSAGE value="class21HW" />
+-+    <option name="LAST_COMMIT_MESSAGE" value="class21HW" />
+-   </component>
+- </project>
+-\ No newline at end of file

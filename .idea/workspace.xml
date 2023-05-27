@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67368285-fa14-43c7-8012-98879bc9803e" name="Changes" comment="Learning to commit through IntelliJ">
+      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task01ReverseString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task02IsPalindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task03NumberOfWordsInString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task04AreStringsAnagrams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task05FirstNonRepeatingCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task06Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task07AverageOfMarks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task08Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task09Registration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/class23GroupExercise2/Task10WebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_13_2023_11_09_PM1/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array6PrimeOrNotVer3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array6PrimeOrNotVer3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array8MaxMinNumVer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array8MaxMinNumVer2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array9SecondLargest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class11GroupCodingTasks/D2Array9SecondLargest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class21HW/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/class21HW/Computer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +32,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -75,13 +93,13 @@
       <recent name="class08HW" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ComputerTester">
-    <configuration name="AX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class20HW.AX" />
+  <component name="RunManager" selected="Application.Tester (1)">
+    <configuration name="Task01ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Task01ReverseString" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class20HW.*" />
+          <option name="PATTERN" value="class23GroupExercise2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComputerTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class21HW.ComputerTester" />
+    <configuration name="Task08Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Task08Car" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class21HW.*" />
+          <option name="PATTERN" value="class23GroupExercise2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreditCardTester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class20HW.CreditCardTester" />
+    <configuration name="Task09Registration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Task09Registration" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class20HW.*" />
+          <option name="PATTERN" value="class23GroupExercise2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreditCardTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class20HW.CreditCardTester" />
+    <configuration name="Tester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Tester" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class20HW.*" />
+          <option name="PATTERN" value="class23GroupExercise2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DegreeTester (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class20HW.DegreeTester" />
+    <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Tester" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class20HW.*" />
+          <option name="PATTERN" value="class23GroupExercise2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ComputerTester" />
-        <item itemvalue="Application.DegreeTester (2)" />
-        <item itemvalue="Application.CreditCardTester (1)" />
-        <item itemvalue="Application.CreditCardTester" />
-        <item itemvalue="Application.AX" />
+        <item itemvalue="Application.Tester (1)" />
+        <item itemvalue="Application.Task01ReverseString" />
+        <item itemvalue="Application.Tester" />
+        <item itemvalue="Application.Task09Registration" />
+        <item itemvalue="Application.Task08Car" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +311,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684034879387</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="class21HW">
+      <created>1684035273343</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684035273343</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Group Project #2">
+      <created>1685158187456</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1685158187456</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -316,6 +348,7 @@
     <MESSAGE value="class18HW" />
     <MESSAGE value="class20HW" />
     <MESSAGE value="class21HW" />
-    <option name="LAST_COMMIT_MESSAGE" value="class21HW" />
+    <MESSAGE value="Group Project #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Group Project #2" />
   </component>
 </project>

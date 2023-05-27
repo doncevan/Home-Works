@@ -2,16 +2,14 @@ package class11GroupCodingTasks;
 
 public class D2Array8MaxMinNumVer2 {
     public static void main(String[] args) {
-        int[] numbers = {83, 9, 2, -8, 115, -110};
+        int[] numbers = {-183, 9, 182, -8, 115, 116};
         int max = numbers[0];
         int min = numbers[0];
         for (int number : numbers) {
-            for (int i : numbers) {
-                if (number > max) {
-                    max = number;
-                } else if (i < min) {
-                    min = i;
-                }
+            if (number > max) {
+                max = number;
+            } else if (number < min) {
+                min = number;
             }
         }
         System.out.println("Maximum number is: " + max);
