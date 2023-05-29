@@ -22,7 +22,7 @@ public class ConcatenateStrings {
 
         System.out.println("**********************************");
         for (String s : set) {
-            System.out.print(s.toString() + " ");
+            System.out.print(s + " ");
         }
     }
 }

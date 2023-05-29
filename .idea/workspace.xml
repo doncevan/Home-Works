@@ -78,7 +78,7 @@
       <recent name="class08HW" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IntegerDuplicates">
+  <component name="RunManager" selected="Application.TestClass">
     <configuration name="ConcatenateStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="class26HW.ConcatenateStrings" />
       <module name="Home Works" />
@@ -159,10 +159,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IntegerDuplicates" />
         <item itemvalue="Application.TestClass" />
-        <item itemvalue="Application.ConcatenateStrings" />
+        <item itemvalue="Application.IntegerDuplicates" />
         <item itemvalue="Application.Employee" />
+        <item itemvalue="Application.ConcatenateStrings" />
         <item itemvalue="Application.TestClass1" />
       </list>
     </recent_temporary>
