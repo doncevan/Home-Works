@@ -48,23 +48,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/magre/eclipse-workspace/Home Works&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/magre/eclipse-workspace/Home Works",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\magre\eclipse-workspace\Home Works\src\class04HW" />
@@ -77,13 +78,13 @@
       <recent name="class08HW" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StudentTester (1)">
-    <configuration name="CardTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class25HW.CardTester" />
+  <component name="RunManager" selected="Application.ConcatenateStrings">
+    <configuration name="ConcatenateStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class26HW.ConcatenateStrings" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class25HW.*" />
+          <option name="PATTERN" value="class26HW.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsuranceTester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class25HW.InsuranceTester" />
+    <configuration name="Employee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class26HW.Employee" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class25HW.*" />
+          <option name="PATTERN" value="class26HW.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsuranceTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class25HW.InsuranceTester" />
+    <configuration name="TestClass (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class26HW.TestClass" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class25HW.*" />
+          <option name="PATTERN" value="class26HW.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTester (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class25HW.StudentTester" />
+    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class26HW.TestClass" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class25HW.*" />
+          <option name="PATTERN" value="class26HW.Person" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task01ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Task01ReverseString" />
+    <configuration name="TestClass1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class26HW.TestClass1" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class23GroupExercise2.*" />
+          <option name="PATTERN" value="class26HW.Person" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +144,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="class23GroupExercise2.Tester" />
+    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="class26HW.TestClass" />
       <module name="Home Works" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="class23GroupExercise2.*" />
+          <option name="PATTERN" value="class26HW.Person" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StudentTester (1)" />
-        <item itemvalue="Application.Tester" />
-        <item itemvalue="Application.Task01ReverseString" />
-        <item itemvalue="Application.InsuranceTester (1)" />
-        <item itemvalue="Application.CardTester" />
+        <item itemvalue="Application.ConcatenateStrings" />
+        <item itemvalue="Application.Employee" />
+        <item itemvalue="Application.TestClass" />
+        <item itemvalue="Application.TestClass1" />
+        <item itemvalue="Application.TestClass (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685158187456</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="class25HW">
+      <created>1685220986373</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1685220986373</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -357,6 +365,7 @@
     <MESSAGE value="class20HW" />
     <MESSAGE value="class21HW" />
     <MESSAGE value="Group Project #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Group Project #2" />
+    <MESSAGE value="class25HW" />
+    <option name="LAST_COMMIT_MESSAGE" value="class25HW" />
   </component>
 </project>
