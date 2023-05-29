@@ -23,9 +23,9 @@ public class ConcatenateStrings {
 
         StringBuilder sb = new StringBuilder();
         for (String s : set) {
-            sb.append(s + " ");
+            sb.append(s).append(" ");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 }
 

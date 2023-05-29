@@ -10,10 +10,10 @@ import java.util.TreeMap;
     Print each object details.
     */
 public class Person {
-    private String name;
-    private String lastName;
-    private int age;
-    private double salary;
+    private final String name;
+    private final String lastName;
+    private final int age;
+    private final double salary;
 
     public Person(String name, String lastName, int age, double salary) {
         this.name = name;
