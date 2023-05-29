@@ -19,13 +19,10 @@ public class ConcatenateStrings {
 
         String sentence = String.join(" ", set);
         System.out.println(sentence);
-        System.out.println("**********************************");
 
-        StringBuilder sb = new StringBuilder();
+        System.out.println("**********************************");
         for (String s : set) {
-            sb.append(s).append(" ");
+            System.out.print(s.toString() + " ");
         }
-        System.out.println(sb);
     }
 }
-
